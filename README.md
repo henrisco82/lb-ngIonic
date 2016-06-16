@@ -1,8 +1,5 @@
 # lb-ngIonic
 
-[![Dependency Status](https://david-dm.org/loicknuchel/ionic-starter.svg)](https://david-dm.org/loicknuchel/ionic-starter)
-[![devDependency Status](https://david-dm.org/loicknuchel/ionic-starter/dev-status.svg)](https://david-dm.org/loicknuchel/ionic-starter#info=devDependencies)
-
 Kickstart Your Ionic Project with Nodejs LoopBack backend in seconds !
 
 This project aims to let you start a new Hybrid cross platform app as fast as possible using Loopback-angular-admin backend.
@@ -36,15 +33,16 @@ To run the app on your android device :
 Once again, in one command : `ionic platform add android && ionic resources && ionic run android`
 
 Before starting, makes sure you've followed [Getting Started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack) to install Node and LoopBack.
+
 In adittion, you will need a basic understanding of:
  - [AngularJs](https://angularjs.org/)
  - Ionic [CSS](http://ionicframework.com/docs/components/) and [Javascript](http://ionicframework.com/docs/api/) components  
 
 ## Main features
 
-- User authentication
-- Storage helpers & caching
-- REST & Parse Api helpers
+- User authentication with Social Authentication
+- Rest Apis
+- Material Design :tada:
 - Error handling & async remote logger
 - Angular wrappers & browser mocks for plugins :
     - [org.apache.cordova.device](https://github.com/apache/cordova-plugin-device) ([ngCordova](http://ngcordova.com/docs/plugins/device/))
@@ -71,71 +69,27 @@ As it's only a template project, you may want to change its name. For that, you 
 - `bower.json` (name, homepage, author & description)
 - `package.json` (name & description)
 - `ionic.project` (name)
--  `lib/lb-services` (Api-Url, generated lb-service based on your backend)
+-  `app/services.js` (Api-Url, generated lb-service based on your backend)
 
 ## Used versions
 
-- Node v4.2.1 (`node -v`)
-- Cordova 5.3.3 (`cordova -version`)
-- Bower 1.6.3 (`bower -v`)
+- Node v5.4.1 (`node -v`)
+- Cordova 6.1.1 (`cordova -version`)
+- Bower 1.7.2 (`bower -v`)
 - Angular 1.3.13 (see bower.json)
 - Ionic 1.0.0-rc.5 (see bower.json)
 
 ## TODO
 
-- Mettre en place des analytices (segment.io, google analytics...)
-- tell Ionic CLI to not add empty cordova.js :(
-- improve log.js : get device uuid instead of userId...
-- Geolocation plugin : check if geolocation is enabled
-- add tests & comments (plugins services & mocks, utils services...) (http://forum.ionicframework.com/t/unit-tests-for-ionic/3711/5)
-- add standard usefull plugins :
-    - http://mcgivery.com/using-custom-url-schemes-ionic-framework-app/
-    - sqlite db (https://blog.nraboy.com/2015/01/deploy-ionic-framework-app-pre-filled-sqlite-db/)
-    - org.apache.cordova.statusbar ([ngCordova](http://ngcordova.com/docs/plugins/statusbar/))
-    - de.appplant.cordova.plugin.local-notification ([ngCordova](http://ngcordova.com/docs/plugins/localNotification/))
-    - webintent
-    - org.apache.cordova.splashscreen ([ngCordova](http://ngcordova.com/docs/plugins/splashscreen/))
-    - https://github.com/pushandplay/cordova-plugin-apprate ([ngCordova](http://ngcordova.com/docs/plugins/appRate/))
-    - https://github.com/whiteoctober/cordova-plugin-app-version ([ngCordova](http://ngcordova.com/docs/plugins/appVersion/))
-
-## Infos
-
-### Browser development
-
-- Chrome cordova : https://chrome.google.com/webstore/detail/cordova-mocks/iigcccneenmnplhhfhaeahiofeeeifpn (https://github.com/pbernasconi/chrome-cordova)
-
-### Android debug
-
-- android remote debug : https://developer.chrome.com/devtools/docs/remote-debugging
-- activate developer mode on android
-
-### Specific urls
-
-Use these custom urls to open other apps using inappbrowser (org.apache.cordova.inappbrowser)
-
-- "tel:0123456789" => call this number
-- "sms:0123456789?body=coucou" => send sms to this number
-- "geo:lat,lon" => open google map to this geoloc
-- "mailto:toto@example.com" => send an email
-- "market:???"
-
-see http://stackoverflow.com/questions/26271313/tel-sms-and-mailto-no-longer-working-in-android-after-upgrading-to-cordo
-
-### Other links
-
+- Offline Caching
 - Push
-    - https://github.com/hollyschinsky/PushNotificationSample
-- Unit test
-    - https://bradb.net/unit-testing-with-the-ionic-framework/
-    - http://forum.ionicframework.com/t/ionic-and-karma-unittest/8799
-- Data
-    - PouchDB (http://devgirl.org/2014/12/30/sync-data-using-pouchdb-in-your-ionic-framework-app/)
 
 ## Contributing
 - Feel Free to Open an issue and ask any questions. You can email me denzjoseph@gmail.com
 - Be awesome and make a pull request.
 - Be Super awesome to Star This project.
 - Checkout The [CONTRIBUTING](https://github.com/denzelwamburu/lb-ngIonic/blob/master/CONTRIBUTING.md) Documentation.
+
 ## Credits
 
 - [Ionic Starter](https://github.com/loicknuchel/ionic-starter) by [loicknuchel](https://github.com/loicknuchel).

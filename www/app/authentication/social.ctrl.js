@@ -1,6 +1,6 @@
 angular.module('app.social', [])
 
-.factory('$facebookLogin', function($user) {
+.factory('$facebookLogin', function(User) {
   return function() {
     var url = 'http://localhost:3000/auth/facebook';
 
@@ -11,7 +11,7 @@ angular.module('app.social', [])
       ref.addEventListener('loadstop', function(ev) {
         if (ev.url.indexOf('/auth/facebook/callback') !== -1) {
           ref.close();
-          $user.load();
+          User.load();
         }
       });
     } else {
@@ -19,7 +19,7 @@ angular.module('app.social', [])
       // and, when they do, check the server to see if they're now logged in.
       var interval = setInterval(function() {
         if (ref.closed) {
-          $user.load();
+          User.load();
           clearInterval(interval);
         }
       }, 100);

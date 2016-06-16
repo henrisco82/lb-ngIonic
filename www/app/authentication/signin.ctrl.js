@@ -1,7 +1,7 @@
 angular.module('app.signin', ['lbServices', 'ionic'])
-    .controller('SigninCtrl', function ($scope, User, $location, $ionicPopup, $ionicLoading, ionicToast) {
+    .controller('SigninCtrl', function ($scope, User, $location, $ionicPopup, $ionicLoading, ionicToast, $facebookLogin) {
         if (User.getCachedCurrent()!==null) {
-           $location.path('app/reports');
+           $location.path('app/twitts');
         }
         $scope.showToast = function(){
         // <!-- ionicToast.show(message, position, stick, time); -->
@@ -79,6 +79,8 @@ angular.module('app.signin', ['lbServices', 'ionic'])
         $scope.goToRegister = function () {
             $location.path('register');
         };
+        // facebook login
+        $scope.facebookLogin = $facebookLogin;
 
 
     });

@@ -4,8 +4,6 @@ Kickstart Your Ionic Project with Nodejs LoopBack backend in seconds !
 
 This project aims to let you start a new Hybrid cross platform app as fast as possible using Loopback-angular-admin backend.
 
-This is a continuation of the [ionic starter](https://github.com/loicknuchel/ionic-starter) and
-
 Just clone it and you are ready to do ! Many boilerplate code is already written and most usefull libs are included. I'm trying to follow best practices with Angular & Ionic so it could be a good kick start :)
 
 Feel free to open an issue for any question or suggestion you could have.

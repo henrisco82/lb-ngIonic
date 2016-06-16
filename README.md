@@ -1,4 +1,5 @@
 # lb-ngIonic
+[![Build Status](https://travis-ci.org/denzelwamburu/lb-ngIonic.svg?branch=master)](https://travis-ci.org/denzelwamburu/lb-ngIonic)
 
 Kickstart Your Ionic Project with Nodejs LoopBack backend in seconds !
 

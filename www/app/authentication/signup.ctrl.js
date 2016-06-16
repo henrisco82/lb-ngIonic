@@ -1,5 +1,5 @@
-angular.module('app.register', ['lbServices', 'ionic'])
-    .controller('RegisterCtrl', function ($scope, User, $ionicPopup, $location, $ionicLoading, ionicToast) {
+angular.module('app.signup', ['lbServices', 'ionic'])
+    .controller('SignupCtrl', function ($scope, User, $ionicPopup, $location, $ionicLoading, ionicToast) {
 
      /*
          * Show loading while data is being processed
